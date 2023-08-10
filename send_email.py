@@ -9,7 +9,7 @@ password = "ynzxdyiuxgzaxffe"
 
 
 def send_email(subject, body, sender, recipients, password):
-    msg = MIMEText(body)
+    msg = MIMEText(body, "html")
     msg["Subject"] = subject
     msg["From"] = sender
     msg["To"] = ", ".join(recipients)
